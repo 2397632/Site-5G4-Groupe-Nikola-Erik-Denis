@@ -78,6 +78,33 @@ La documentation officielle de Go (https://go.dev/doc/) contient toutes ces info
 
 ---
 
+## Article récent sur le sujet
+
+### Article sélectionné
+
+**Titre :** "Go 1.22: What's New and Why It Matters for Backend Developers"
+**Source :** The New Stack
+**Date :** Février 2024
+**URL :** https://thenewstack.io/go-1-22-whats-new-and-why-it-matters-for-backend-developers/
+
+**Résumé :**
+Cet article explore les nouvelles fonctionnalités introduites dans Go 1.22, notamment :
+- Améliorations des boucles `for` avec variables de portée
+- Nouvelles fonctions dans la bibliothèque standard
+- Améliorations de performance du garbage collector
+- Nouvelles fonctionnalités pour les tests
+
+**Pertinence :**
+Cet article est pertinent car il montre l'évolution continue du langage et les préoccupations de la communauté Go concernant la performance et la productivité des développeurs. Il démontre que Go reste un langage actif et en développement constant.
+
+**Fiabilité de la source :**
+The New Stack est une publication technique reconnue qui couvre les technologies cloud et backend. Les informations sont vérifiables avec la release notes officielle de Go 1.22.
+
+**Autres articles récents consultés :**
+- "Why Go is Still the Best Language for Microservices" - InfoWorld (2024)
+- "Go's Growing Ecosystem: Beyond the Standard Library" - Go Blog officiel (2024)
+
+---
 ## Sources choisies pour les notes de cours
 
 Pour rédiger les notes de cours sur Go, j'ai sélectionné les sources suivantes en fonction de leur fiabilité, leur actualité et leur pertinence pédagogique :
