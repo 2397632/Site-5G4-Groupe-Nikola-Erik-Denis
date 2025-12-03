@@ -212,3 +212,44 @@ Pour rédiger les notes de cours sur Go, j'ai sélectionné les sources suivante
 - **Actualité :** Comptes actifs avec contenu récent
 
 ---
+
+## Plan de recherche établi
+
+### Étendue du sujet
+
+Le sujet couvrira :
+- **Fondamentaux :** Syntaxe, types, fonctions, structures
+- **Concepts avancés :** Interfaces, goroutines, channels, packages
+- **Écosystème :** Outils intégrés, bibliothèque standard, modules
+- **Cas d'utilisation :** Backend, DevOps, microservices
+- **Comparaisons :** Avec d'autres langages pertinents
+
+### Profondeur
+
+- **Niveau :** Étudiants de 5e session (bon bagage en informatique)
+- **Prérequis :** Connaissance de la programmation orientée objet, bases de la programmation concurrente
+- **Objectif :** Comprendre les fondements théoriques et avoir des exemples de cas d'utilisation pratiques
+
+### Sources de veille continue
+
+Pour maintenir une veille active sur Go, je suivrai :
+- Les release notes officielles (https://go.dev/doc/devel/release)
+- Le blog Go officiel (https://go.dev/blog/)
+- Les annonces sur @golang (Twitter)
+- Les vidéos GopherCon pour les tendances de la communauté
+- Les discussions sur r/golang pour les retours d'expérience
+
+---
+
+## Références
+
+1. Documentation officielle Go : https://go.dev/doc/
+2. Effective Go : https://go.dev/doc/effective_go
+3. A Tour of Go : https://go.dev/tour/
+4. The Go Programming Language (Livre) - Donovan & Kernighan
+5. Go by Example : https://gobyexample.com/
+6. The New Stack - Go 1.22 Article : https://thenewstack.io/go-1-22-whats-new-and-why-it-matters-for-backend-developers/
+7. JustForFunc YouTube Channel : https://www.youtube.com/c/justforfunc
+8. GopherCon YouTube Channel : https://www.youtube.com/c/GopherAcademy
+9. Reddit r/golang : https://www.reddit.com/r/golang/
+10. Go Forum : https://forum.golangbridge.org/
