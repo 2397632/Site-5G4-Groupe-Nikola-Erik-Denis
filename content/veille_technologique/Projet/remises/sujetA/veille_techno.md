@@ -21,11 +21,13 @@ Explique-moi le langage de programmation Go (Golang) : ses origines, ses caract�
 Le langage Go (Golang) est un langage de programmation compilé, développé par Google en 2009 par Robert Griesemer, Rob Pike et Ken Thompson. Il a été conçu pour résoudre des problèmes spécifiques rencontrés dans le développement de logiciels à grande échelle chez Google.
 
 **Origines :**
+
 - Créé pour simplifier le développement de systèmes distribués et de services cloud
 - Inspiré par la simplicité de langages comme C, mais avec des fonctionnalités modernes
 - Première version stable (1.0) publiée en 2012
 
 **Caractéristiques principales :**
+
 1. **Simplicité** : Syntaxe minimaliste, peu de mots-clés (25 seulement)
 2. **Compilation rapide** : Compilateur très performant
 3. **Concurrence native** : Goroutines et channels intégrés au langage
@@ -34,6 +36,7 @@ Le langage Go (Golang) est un langage de programmation compilé, développé par
 6. **Exécutables statiques** : Un seul binaire, pas de dépendances externes
 
 **Cas d'utilisation :**
+
 - Services web et APIs (backend)
 - Outils DevOps (Docker, Kubernetes, Terraform)
 - Microservices
@@ -42,6 +45,7 @@ Le langage Go (Golang) est un langage de programmation compilé, développé par
 - Services cloud et infrastructure
 
 **Comparaison rapide :**
+
 - **vs Java** : Plus simple, compilation plus rapide, meilleure concurrence native
 - **vs Python** : Beaucoup plus rapide à l'exécution, typage statique, meilleur pour la concurrence
 - **vs Rust** : Plus simple à apprendre, garbage collection automatique, mais moins de contrôle sur la mémoire
