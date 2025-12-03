@@ -77,3 +77,51 @@ La documentation officielle de Go (https://go.dev/doc/) contient toutes ces info
 - Articles de blog techniques : Variables selon l'auteur, nécessitent vérification
 
 ---
+
+## Sources choisies pour les notes de cours
+
+Pour rédiger les notes de cours sur Go, j'ai sélectionné les sources suivantes en fonction de leur fiabilité, leur actualité et leur pertinence pédagogique :
+
+### Sources primaires
+
+1. **Documentation officielle Go** (https://go.dev/doc/)
+   - Source la plus fiable et à jour
+   - Maintenue par l'équipe Go de Google
+   - Contient des tutoriels, guides et références complètes
+   - **Utilisation :** Concepts fondamentaux, syntaxe, bonnes pratiques
+
+2. **Effective Go** (https://go.dev/doc/effective_go)
+   - Guide officiel des meilleures pratiques
+   - Écrit par les créateurs du langage
+   - **Utilisation :** Exemples de code idiomatique, patterns recommandés
+
+3. **A Tour of Go** (https://go.dev/tour/)
+   - Tutoriel interactif officiel
+   - Excellent pour comprendre les concepts de base
+   - **Utilisation :** Structure pédagogique, exemples pratiques
+
+### Sources secondaires fiables
+
+4. **The Go Programming Language** (Livre - Donovan & Kernighan)
+   - Livre de référence écrit par des experts
+   - Couvre le langage en profondeur
+   - **Utilisation :** Explications détaillées, exemples avancés
+
+5. **Go by Example** (https://gobyexample.com/)
+   - Exemples de code annotés
+   - Très utile pour l'apprentissage pratique
+   - **Utilisation :** Exemples concrets pour chaque concept
+
+6. **Articles techniques récents** (Medium, Dev.to, etc.)
+   - Articles de développeurs expérimentés
+   - Cas d'utilisation réels
+   - **Vérification :** Croisement avec la documentation officielle
+
+### Critères de sélection
+
+- **Fiabilité :** Priorité aux sources officielles et reconnues
+- **Actualité :** Focus sur Go 1.21+ (dernières versions)
+- **Pédagogie :** Sources adaptées à des étudiants de 5e session
+- **Diversité :** Mélange de documentation, tutoriels et exemples pratiques
+
+---
