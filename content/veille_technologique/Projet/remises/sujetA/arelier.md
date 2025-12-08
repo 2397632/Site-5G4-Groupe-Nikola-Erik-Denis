@@ -63,4 +63,26 @@ Entrée utilisateur : mot = "Hello"
 Sortie : 2
 ```
 
+## Question 6
+**Compléter le code**
+
+Utilisez des structs et une interface pour compléter le code
+- Créer une interface Vehicule qui déclare la méthode ToString().
+- Créer les 3 structs : Voiture, Camion et Moto. 
+- Créer les fonctions ToString() pour chaque objet. Celle-ci retourne la marque du vehicule.
+
+**La Fonction Main**
+```Go
+func main() {
+    var v1 Vehicule = Voiture{Marque: "Ferrari"}
+    var v2 Vehicule = Camion{Marque: "Mercedes"}
+    var v3 Vehicule = Moto{Marque: "Yamaha"}
+
+    println(v1.ToString())
+    println(v2.ToString())
+    println(v3.ToString())
+}
+```
+
+
 [Solution des ateliers](https://github.com/MansouriE/GO_SOLUTIONS)
