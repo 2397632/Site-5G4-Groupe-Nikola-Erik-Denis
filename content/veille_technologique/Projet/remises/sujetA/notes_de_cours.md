@@ -20,7 +20,7 @@ Go a été **créé pour** rendre la **programmation plus rapide, plus simple et
 
 **L’une des grandes forces de Go est sa simplicité**. Contrairement à d’autres langages qui possèdent des dizaines de concepts avancés, Go privilégie une **approche minimaliste.** Il ne propose pas d’héritage complexe, pas de génériques pendant longtemps (introduits seulement en 2022), et limite volontairement les fonctionnalités pouvant rendre un code difficile à comprendre. Cette philosophie se traduit par un **code clair, lisible et facile à maintenir**, ce qui fait de Go un excellent choix pour les équipes qui recherchent une grande productivité. Malgré cette simplicité, Go reste extrêmement puissant grâce à la qualité de ses bibliothèques standard et à son écosystème en constante croissance.
 
-#### Exemple de Hello world en GO VS assembleur x86
+#### Exemple de Hello world en GO VS Java
 
 **GO :**
 ```go
@@ -33,27 +33,14 @@ func main() {
 }
 ```
 
-**Assembleur x86 :**
-```
-section .data
-    msg db "Hello, World!", 0x0A  ; le texte à afficher, suivi d’un saut de ligne
-    len equ $ - msg               ; longueur du texte
+**Java**
+```java
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
 
-section .text
-    global _start                 ; point d’entrée du programme
-
-_start:
-    ; appel système write(1, msg, len)
-    mov eax, 4                    ; 4 = numéro de l’appel système write
-    mov ebx, 1                    ; 1 = sortie standard (stdout)
-    mov ecx, msg                  ; adresse du message
-    mov edx, len                  ; longueur du message
-    int 0x80                      ; interruption pour appeler le noyau Linux
-
-    ; appel système exit(0)
-    mov eax, 1                    ; 1 = numéro de l’appel système exit
-    mov ebx, 0                    ; code de retour 0
-    int 0x80
 
 ```
 
@@ -84,6 +71,11 @@ $ sudo apt update
 $ sudo apt install golang -y
 $ go version
 ```
+
+Exécuter le fichier
+``` bash
+go run fichier.go
+```
 Go est maintenant prêt à être utilisé.
 
 ## Premiers tests : Hello World
@@ -100,7 +92,7 @@ Un programme Go se compose généralement :
 
 Créez un fichier hello.go :
 
-``` 
+``` go
 package main
 
 import "fmt"
@@ -111,13 +103,13 @@ func main() {
 ```
 Exécutez-le :
 
-``` 
+``` bash
 $ go run hello.go
 ```
 
 Ou compilez-le :
 
-``` 
+``` bash
 $ go build hello.go
 $ ./hello
 ```
@@ -141,7 +133,7 @@ Il existe plusieurs façons de déclarer des variables en Go.
 ##### Déclaration classique
 
 
-``` 
+``` go
 var x int = 10
 ```
 
@@ -149,7 +141,7 @@ var x int = 10
 
 Go peut déduire automatiquement le type d’une variable :
 
-``` 
+``` go
 x := 10
 ```
 
@@ -158,11 +150,11 @@ C’est la méthode préférée dans les petits programmes car elle est concise.
 
 ##### Déclaration multiple
 
-``` 
+``` go
 var a, b, c int = 1, 2, 3
 ```
 ou avec inférence :
-``` 
+``` go
 a, b, c := 1, 2, 3
 ```
 
@@ -182,7 +174,7 @@ Voici les principaux types natifs fournis par Go :
 
 
 Exemple :
-``` 
+``` go
 var age int = 20
 var pi float64 = 3.14
 var nom string = "Nikola"
@@ -192,13 +184,12 @@ var actif bool = true
 ### Les chaînes de caractères (string)
 Les chaînes en Go sont immuables : une fois créées, elles ne peuvent être modifiées. On peut cependant les manipuler en créant de nouvelles chaînes.
 
-``` 
+``` go
 message := "Bonjour"
 fmt.Println(message)
-
 ```
 Pour obtenir la longueur :
-``` 
+``` go
 fmt.Println(len(message))
 
 ```
@@ -207,7 +198,7 @@ fmt.Println(len(message))
 
 Un tableau possède une taille fixe :
 
-``` 
+``` go
 var notes [3]int = [3]int{12, 15, 18}
 ```
 
@@ -216,12 +207,12 @@ var notes [3]int = [3]int{12, 15, 18}
 Les slices sont des tableaux dynamiques, beaucoup plus flexibles.
 C’est l’un des types les plus importants en Go.
 
-``` 
+``` go
 nombres := []int{1, 2, 3, 4}
 fmt.Println(nombres)
 ```
 Ajouter un élément :
-``` 
+``` go
 nombres = append(nombres, 5)
 
 ```
@@ -243,14 +234,14 @@ Comme dans la plupart des langages, elles permettent de regrouper du code réuti
 
 La syntaxe de base d’une fonction en Go est la suivante :
 
-``` 
+``` go
 func nomDeFonction(param1 type1, param2 type2) typeRetour {
     // corps de la fonction
 }
 ```
 Exemple :
 
-``` 
+``` go
 func Bonjour(nom string) string {
     message := "Bonjour " + nom
     return message
@@ -268,7 +259,7 @@ Ici :
 - string après les parenthèses : type de la valeur de retour
 
 #### Appeler une fonction
-``` 
+``` go
 resultat := Bonjour("Nikola")
 fmt.Println(resultat) // Affiche : Bonjour Nikola
 ```
@@ -277,7 +268,7 @@ fmt.Println(resultat) // Affiche : Bonjour Nikola
 
 Une particularité très utilisée en Go est la possibilité de retourner plusieurs valeurs.
 C’est notamment utilisé pour retourner un résultat et une erreur éventuelle.
-``` 
+``` go
 func Diviser(a, b float64) (float64, error) {
     if b == 0 {
         return 0, fmt.Errorf("division par zéro")
@@ -286,7 +277,7 @@ func Diviser(a, b float64) (float64, error) {
 }
 ```
 Utilisation :
-``` 
+``` go
 resultat, err := Diviser(10, 2)
 if err != nil {
     fmt.Println("Erreur :", err)
@@ -295,17 +286,16 @@ if err != nil {
 }
 ```
 Voici le rendu final :
-``` 
+``` bash
 Résultat : 5
 Erreur : division par zéro
-
-
 ```
+
 ### Paramètres nommés et valeurs de retour nommées
 
 Go permet aussi de donner des noms aux valeurs de retour :
 
-``` 
+``` go
 func SommeEtMoyenne(a, b, c int) (somme int, moyenne float64) {
     somme = a + b + c
     moyenne = float64(somme) / 3
@@ -332,7 +322,7 @@ Go possède des pointeurs, car ils permettent :
 
 Mais Go ne permet pas l’arithmétique des pointeurs, ce qui évite les erreurs dangereuses (comme en C).
 
-``` 
+``` go
 func Incrementer(x *int) {
     *x = *x + 1
 }
@@ -378,7 +368,7 @@ Son modèle de concurrence est inspiré du CSP (Communicating Sequential Process
 #### **Les goroutines**
 
 Une goroutine est une **fonction concurrente ultra légère.**
-``` 
+``` go
 go fmt.Println("Bonjour !")
 
 ```
@@ -443,7 +433,7 @@ func main() {
 
 **Affichage :**
 
-```
+```bash
 Bonjour, je m'appelle Alex
 ```
 
