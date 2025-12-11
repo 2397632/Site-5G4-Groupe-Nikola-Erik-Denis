@@ -3,6 +3,11 @@ title = "Exercices"
 weight = 3
 +++
 
+#### Installation
+Windows : https://go.dev/dl/
+
+Linux : [Guide d'installation Linux](notes_de_cours.md#installation-sur-linux)
+
 ## Question 1
 **Trouver le maximum et le minimum d'un tableau**
 
@@ -101,6 +106,71 @@ Entrez votre réponse : 15
 Plus petit
 Entrez votre réponse : 13
 Vous avez trouvé le nombre 13 en 4 essais 
+```
+
+## Question 8
+Comparer la vitesse d'exécution des languages Go, Python et JavaScript à faire 2+2, 100 million de fois.
+- Crée les fichiers ex8.go, ex8.py et ex8.js avec le code si-dessous puis exécuter les.
+
+**Language Go**
+```Go
+package main
+
+import (
+	"fmt"
+	"time"
+)
+
+func main() {
+	const N = 100_000_000 // nombre de  répétitions
+	start := time.Now()
+
+	sum := 0
+	for i := 0; i < N; i++ {
+		sum += 2 + 2
+	}
+
+	temp := time.Since(start)
+	fmt.Printf("Temps Go : %s\n", temp)
+}
+```
+
+**Language Python**
+```Py
+import time
+
+N = 100_000_000  # nombre de répétitions
+
+start = time.time()
+
+s = 0
+for _ in range(N):
+    s += 2 + 2
+
+elapsed = (time.time() - start) * 1000  # convertir en millisecondes
+
+print(f"Temps Python : {elapsed:.2f}ms")
+```
+
+**Language JavaScript**
+```Js
+const N = 100_000_000; // nombre de  répétitions
+
+console.time("Temps JS");
+
+let s = 0;
+for (let i = 0; i < N; i++) {
+  s += 2 + 2;
+}
+
+console.timeEnd("Temps JS");
+```
+
+Exemple des 3 terminals
+```
+Temps Go : 13.5006ms
+Temps Python : 3279.56 ms
+Temps JS: 53.369ms
 ```
 
 [Solution des ateliers](https://github.com/MansouriE/GO_SOLUTIONS)

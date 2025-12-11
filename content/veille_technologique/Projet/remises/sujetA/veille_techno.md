@@ -136,19 +136,13 @@ Pour rédiger les notes de cours sur Go, j'ai sélectionné les sources suivante
 
 ### Sources secondaires fiables
 
-4. **The Go Programming Language** (Livre - Donovan & Kernighan)
-
-   - Livre de référence écrit par des experts
-   - Couvre le langage en profondeur
-   - **Utilisation :** Explications détaillées, exemples avancés
-
-5. **Go by Example** (https://gobyexample.com/)
+4. **Go by Example** (https://gobyexample.com/)
 
    - Exemples de code annotés
    - Très utile pour l'apprentissage pratique
    - **Utilisation :** Exemples concrets pour chaque concept
 
-6. **Articles techniques récents** (Medium, Dev.to, etc.)
+5. **Articles techniques récents** (Medium, Dev.to, etc.)
    - Articles de développeurs expérimentés
    - Cas d'utilisation réels
    - **Vérification :** Croisement avec la documentation officielle
@@ -262,10 +256,9 @@ Pour maintenir une veille active sur Go, je suivrai :
 1. Documentation officielle Go : https://go.dev/doc/
 2. Effective Go : https://go.dev/doc/effective_go
 3. A Tour of Go : https://go.dev/tour/
-4. The Go Programming Language (Livre) - Donovan & Kernighan
-5. Go by Example : https://gobyexample.com/
-6. The New Stack - Go 1.22 Article : https://thenewstack.io/go-1-22-whats-new-and-why-it-matters-for-backend-developers/
-7. JustForFunc YouTube Channel : https://www.youtube.com/c/justforfunc
-8. GopherCon YouTube Channel : https://www.youtube.com/c/GopherAcademy
-9. Reddit r/golang : https://www.reddit.com/r/golang/
-10. Go Forum : https://forum.golangbridge.org/
+4. Go by Example : https://gobyexample.com/
+5. The New Stack - Go 1.22 Article : https://thenewstack.io/go-1-22-whats-new-and-why-it-matters-for-backend-developers/
+6. JustForFunc YouTube Channel : https://www.youtube.com/c/justforfunc
+7. GopherCon YouTube Channel : https://www.youtube.com/c/GopherAcademy
+8. Reddit r/golang : https://www.reddit.com/r/golang/
+9. Go Forum : https://forum.golangbridge.org/
